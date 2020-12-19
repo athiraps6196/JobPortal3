@@ -1,0 +1,41 @@
+﻿@model Candidates
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class=" container-fluid">
+    <div class="row">
+      
+     
+            <div class="col-sm-3 col-md-3">
+                <div class="card box ml-5 mt-5" style="width:200px; height:300px; border-radius:10%;">
+                    <img class="card-img-top mx-auto pt-3" src="~/images/@Model.FileName" alt="Card image" style="width:50%; border-radius: 50%;">
+                    <div class="card-body text-center">
+                        <h4 class="card-title text-white ">@Model.Name</h4>
+                        <p class="text-white small mb-1">@Model.Job</p>
+                        <p class="text-white small mt-1"> @Model.City , @Model.State </p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- details -->
+            <div class="col-sm-8 col-md-8 border border-primary  mt-3 ml" style="border-radius:3%;">
+                <h3 class="pt-5" style="color: #383471;"><u style="color: #383471;">About</u></h3>
+                <p class="small" style="color:#2B6AAF;font-size:15px;">
+                    @Model.About
+                </p><hr class=" line">
+                <h3 class="pt-1" style="color: #383471;"><u style="color: #383471;">Experience</u></h3>
+                <p class="small" style="color:#2B6AAF;font-size:15px;">@Model.Experience</p><hr class=" line">
+                <h3 class="pt-1" style="color: #383471;"><u style="color: #383471;">Skill</u></h3>
+                <p class="small" style="color:#2B6AAF;font-size:15px;">@Model.Skill</p><hr class=" line">
+                <h3 class="pt-1" style="color: #383471;"><u style="color: #383471;">Work</u></h3>
+                <a href="#"><p class="small" style="color:#2B6AAF;font-size:15px;">@Model.Work</p></a>
+
+            </div>
+         
+        </div>
+        
+    </div>
+

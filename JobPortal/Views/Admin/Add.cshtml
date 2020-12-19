@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
+    <div class="container ie-h-align-center-fix">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 mt-3 mt-md-0">
+                <div class="tm-bg-white tm-p-4"><br /><br />
+                                                      <form action="ForAdd" method="post" class="register-form" enctype="multipart/form-data">
+                                                          <div class="form-group">
+                                                              <input type="text" id="Name" name="Name" class="form-control" placeholder="Name" required />
+                                                          </div>
+
+                                                          <div class="form-group">
+                                                              <input type="text" id="Address" name="Address" class="form-control" placeholder="Address" required />
+                                                          </div>
+
+                                                          <div class="form-group">
+                                                              <input type="text" id="City" name="City" class="form-control" placeholder="City" required />
+                                                          </div>
+
+                                                          <div class="form-group">
+                                                              <input type="text" id="State" name="State" class="form-control" placeholder="State" required />
+                                                          </div>
+                                                          <div class="form-group">
+                                                              <input type="text" id="Job" name="Job" class="form-control" placeholder="Job" required />
+                                                          </div>
+
+                                                          <div class="form-group">
+                                                              <input type="text" id=" Number" name=" Number" class="form-control" placeholder=" Number" required />
+                                                          </div>
+
+                                                          <div class="form-group">
+                                                              <input type="text" id="About" name="About" class="form-control" placeholder="About" required />
+                                                          </div>
+
+                                                          <div class="form-group">
+                                                              <input type="text" id="Experience" name="Experience" class="form-control" placeholder="Experience" required />
+                                                          </div>
+
+                                                          <div class="form-group">
+                                                              <input type="text" id="Skill" name="Skill" class="form-control" placeholder="Skill" required />
+                                                          </div>
+                                                          <div class="form-group">
+                                                              <input type="text" id="Work" name="Work" class="form-control" placeholder="Work" required />
+                                                          </div>
+
+                                                          <label>Photo</label> <input type="file" name="FileToUpload" />
+
+
+
+
+                                                          @*<div class="form-group">
+            <input type="password" id="register_password" name="Password" class="form-control" placeholder="Password" required />
+        </div>*@
+
+
+                                                          <button type="submit" class="btn btn-primary tm-btn-primary" value="Add">Add</button>
+                                                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

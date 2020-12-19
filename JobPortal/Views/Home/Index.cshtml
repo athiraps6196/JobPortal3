@@ -1,0 +1,27 @@
+﻿@model IEnumerable<JobPortal.Models.Candidates>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 col-lg-4 col-12 mb-4">
+                    <div class="card box  ml-5 mt-5" style="width:200px; height:300px; border-radius:10%; padding:unset;">
+                        <img class="card-img-top mx-auto pt-3" src="~/images/@item.FileName" alt="Card image" style="width:50%; height:40%; border-radius: 40%;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-white ">@item.Name</h4>
+                            <p class="text-white small mt-1">@item.Job </p>
+                            <p class="text-white small mb-1"> @item.City , @item.State</p>
+
+                            <a href="Home/Profile?id=@item.Id" class="btn">View</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

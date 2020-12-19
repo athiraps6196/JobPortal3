@@ -1,0 +1,27 @@
+*{
+    font-family:'PT Serif', serif;
+}
+nav{
+    background-image: linear-gradient(#383471,#171536);
+    
+}
+#s1{
+    border-radius: 50%;
+}
+p{
+    font-size: 10px;
+}
+.box{
+    background-image: linear-gradient(#2B6AAF,#163558);
+}
+.line{
+    border:none;
+    height:1px;
+    background-color:#669ad3;
+}
+.btn{
+    color: #2B6AAF;
+    background-color: white;
+    border-radius: 20px;
+    width: 100px;
+}
