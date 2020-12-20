@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JobPortal.Migrations
 {
     [DbContext(typeof(JobDbContext))]
-    [Migration("20201218064240_db")]
-    partial class db
+    [Migration("20201220150633_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

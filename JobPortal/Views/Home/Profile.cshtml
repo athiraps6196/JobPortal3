@@ -3,22 +3,27 @@
     ViewData["Title"] = "Profile";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<h1 class=" text-capitalize  text-center" style="color:#383471;"><u style="color: #383471; border-width:thin;">Profile</u></h1>
 <div class=" container-fluid">
     <div class="row">
       
      
-            <div class="col-sm-3 col-md-3">
-                <div class="card box ml-5 mt-5" style="width:200px; height:300px; border-radius:10%;">
-                    <img class="card-img-top mx-auto pt-3" src="~/images/@Model.FileName" alt="Card image" style="width:50%; border-radius: 50%;">
-                    <div class="card-body text-center">
-                        <h4 class="card-title text-white ">@Model.Name</h4>
-                        <p class="text-white small mb-1">@Model.Job</p>
-                        <p class="text-white small mt-1"> @Model.City , @Model.State </p>
-                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
-                    </div>
-                </div>
+        <div class="col-sm-3 col-md-3">
+            <!--<div class=" rounded shadow-sm py-4 text-center box w-75 ml-5 h-100 pt-5 ">
+        <img src="~/images/@Model.FileName" alt="" width="150" class="img-fluid rounded-circle mb-3  shadow-sm pic">
+        <div class="card-body text-center">
+            <h4 class="card-title text-white ">@Model.Name</h4>
+            <p class="text-white small mb-1">@Model.Job</p>
+            <p class="text-white small mt-1"> @Model.City , @Model.State </p>-->
+            <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+            <!--</div>
+    </div>-->
+            <div class=" rounded shadow-sm py-4 text-center box w-75 ml-5 h-100">
+                <img src="~/images/@Model.FileName" alt="" width="150" class="img-fluid rounded-circle mb-3  shadow-sm pic">
+                <h5 class="mb-0 text-white">@Model.Name</h5><span class="small text-capitalize text-white">software developer</span><br>
+                <span class="small text-capitalize text-white">@Model.City , @Model.State</span>
             </div>
+        </div>
 
             <!-- details -->
             <div class="col-sm-8 col-md-8 border border-primary  mt-3 ml" style="border-radius:3%;">

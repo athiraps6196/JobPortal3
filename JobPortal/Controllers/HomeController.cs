@@ -43,7 +43,7 @@ namespace JobPortal.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
 
-                var filterList =List.Where(x => x.Name.ToLower().Contains(searchString.ToLower())).ToList();
+                var filterList =List.Where(x => x.Name. ToLower().Contains(searchString.ToLower())).ToList();
 
                 return View(filterList);
             }

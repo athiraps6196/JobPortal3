@@ -14,14 +14,15 @@ namespace JobPortal.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    city = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    City = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     State = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Job = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Number = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     About = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Experience = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Skill = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Work = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    FileName = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

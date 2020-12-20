@@ -5,23 +5,37 @@
 }
 
 <section>
+
     <div class="container">
         <div class="row">
             @foreach (var item in Model)
             {
                 <div class="col-md-4 col-lg-4 col-12 mb-4">
-                    <div class="card box  ml-5 mt-5" style="width:200px; height:300px; border-radius:10%; padding:unset;">
-                        <img class="card-img-top mx-auto pt-3" src="~/images/@item.FileName" alt="Card image" style="width:50%; height:40%; border-radius: 40%;">
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-white ">@item.Name</h4>
-                            <p class="text-white small mt-1">@item.Job </p>
-                            <p class="text-white small mb-1"> @item.City , @item.State</p>
-
-                            <a href="Home/Profile?id=@item.Id" class="btn">View</a>
-                        </div>
+                    <div class=" rounded shadow-sm py-4 text-center box w-75 ml-5 h-100">
+                        <img src="~/images/@item.FileName" alt="" width="150" class="img-fluid rounded-circle mb-3  shadow-sm pic">
+                        <h5 class="mb-0 text-white">@item.Name</h5><span class="small text-capitalize text-white">software developer</span><br>
+                        <span class="small text-capitalize text-white">@item.City , @item.State</span>
+                        <br>
+                        <a class="btn btn-warning mt-3" href="/Home/Profile?id=@item.Id">View</a>
                     </div>
                 </div>
-            }
+
+            
+        
+        <!--<div class="col-md-4 col-lg-4 col-12 mb-4">-->
+        @*<div class="card box  ml-5 mt-5" style="width:200px; height:300px; border-radius:10%; padding:unset;">*@
+        <!--<div class=" rounded shadow-sm py-4 text-center box w-75 ml-5 h-100">
+                <img src="~/images/@item.FileName" alt="" width="100" class="img-fluid rounded-circle mb-3  shadow-sm pic">
+                <div class="card-body text-center">
+                    <h4 class="card-title text-white ">@item.Name</h4>
+                    <p class="text-white small mt-1">@item.Job </p>
+                    <p class="text-white small mb-1"> @item.City , @item.State</p>
+
+                    <a href="Home/Profile?id=@item.Id" class="btn">View</a>
+                </div>
+            </div>
+        </div>-->
+    }
+</div>
         </div>
-    </div>
-</section>
+        </section>
