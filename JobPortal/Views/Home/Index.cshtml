@@ -10,9 +10,12 @@
         <div class="row">
             @foreach (var item in Model)
             {
-                <div class="col-md-4 col-lg-4 col-12 mb-4">
+                <div class="col-md-4 col-lg-4 col-12 mb-4 mt-3">
+                    @if (item.Certified == true)
+                    {<img src="~/image/badge.png" width="50" class="badg" />}
                     <div class=" rounded shadow-sm py-4 text-center box w-75 ml-5 h-100">
-                        <img src="~/images/@item.FileName" alt="" width="150" class="img-fluid rounded-circle mb-3  shadow-sm pic">
+
+                        <img src="~/image/@item.FileName" alt=""class="img-fluid rounded-circle mb-3  shadow-sm pic">
                         <h5 class="mb-0 text-white">@item.Name</h5><span class="small text-capitalize text-white">software developer</span><br>
                         <span class="small text-capitalize text-white">@item.City , @item.State</span>
                         <br>

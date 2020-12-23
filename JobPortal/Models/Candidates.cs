@@ -22,7 +22,8 @@ namespace JobPortal.Models
         public string Experience { get; set; }
         public string Skill { get; set; }
         public string Work { get; set; }
-       
+        public Boolean Certified { get; set; }
+
         [NotMapped]
         public IFormFile FileToUpload { get; set; }
         public string FileName { get; set; }
